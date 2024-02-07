@@ -1,0 +1,20 @@
+GET http://localhost:3000/todos/?status=TO%20DO
+
+
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "id": 7,
+  "todo": "Learn Something",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-27"
+}
+
+
+GET http://localhost:3000/todos/7
+
+
+GET http://localhost:3000/todos/?category=HOME
